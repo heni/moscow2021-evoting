@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  postgres:
+    image: "postgres:13.2"
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+      - ./backups:/data/backups
+    environment:
+      - POSTGRES_DB=moscow2021
+      - POSTGRES_PASSWORD=wee5ahLae5Ut
+volumes:
+  data: {}
