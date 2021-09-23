@@ -21,7 +21,7 @@ class VoteTransaction:
 
     def as_json(self) -> dict:
         return {
-            "hash": self.hash, "datatime": self.datetime.strftime("%Y%m%d-%H:%M:%S"), "district_id": self.district_id,
+            "hash": self.hash, "datetime": self.datetime.strftime("%Y%m%d-%H:%M:%S"), "district_id": self.district_id,
             "decrypted_choice": self.decrypted_choice, "decoded_choice": self.decoded_choice, "decrypted_in_dump": self.decrypted_in_dump
         }
 
